@@ -16,6 +16,8 @@
     <p><strong>{{error_message}}</strong></p>
     {% endif %}
 
+        <a role="button" class="btn btn-primary pull-right" style="padding:10px;" href="{%url 'securityapp:index' %}" id="btn_account_list">Back to Account list</a><br>
+
         <h3>Account name    : {{account.account_name}}</h3><br>
         <h3>Email           : {{account.email}}</h3><br>
         <h3>Phone number    : {{account.phone_number}}</h3><br>
