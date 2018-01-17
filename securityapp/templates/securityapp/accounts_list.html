@@ -21,15 +21,15 @@
             </div>
         </div>
         </form>
-      </div>
-       <div class="list-group"  >
+    </div>
+        <div class="list-group"  >
            {% if object_list %}
 
         {% for account in object_list %}
-             <a href="{% url 'securityapp:account_details' account.id %}" class="list-group-item"  style="width:97%" > {{account.account_name}} </a>
+             <a href="{% url 'securityapp:account_details' account.id %}" class="list-group-item"  style="width:97%" > {{account.account_name}} <span style="float:right;text-align: left;">Email : {{account.email}}</span></a>
         {% endfor %}
            {% else %}
-    <h1>BOOM!!!! <br> There is no accounts to display</h1>
+    <p class="list-group-item" style="width:97%; text-align:center;">No Accounts found</p>
 {% endif %}
 
        </div>

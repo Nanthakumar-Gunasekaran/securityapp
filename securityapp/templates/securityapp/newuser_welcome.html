@@ -1,11 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Welcome to School of thoughts</title>
-</head>
-<body>
-<h1>Welcome to School of Thoughts</h1>
-<a href="{% url 'securityapp:index' %}">Explore</a>
-</body>
-</html>
+{% extends 'securityapp/base.html' %}
+{% block title %}Create an account{% endblock %}
+
+
+{% block body %}
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-sm-12">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h1>Welcome to School of Thoughts</h1>
+                    <a href="{% url 'securityapp:index' %}">Explore</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
